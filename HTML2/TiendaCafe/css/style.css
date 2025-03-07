@@ -52,7 +52,10 @@ h1 {
 h2 {
 
     font-size: 2vw;
-    
+   
+
+        padding: 2.8vw;
+
 }
 
 header img{
@@ -117,19 +120,31 @@ nav {
 section > div {
 
     display: flex;
+   
 
     div {
 
         width: 100%;
         align-content: center;
+        overflow: hidden;
         p {
             font-size: 1.25rem;
         }
+
+        h2 {
+
+            padding: 2.8vw;
+        }
+        
     }
 
     img {
         display: block;
         width: 100%;
+        transition: transform 1s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 
     video {
@@ -141,3 +156,7 @@ section > div {
 
 }
 
+section > h2 {
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
