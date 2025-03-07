@@ -17,7 +17,14 @@
     font-style: normal;
     font-display: swap;
 }
+/* pseudo clases */
 
+:root{
+
+        --color_fondo_primario : #053617;
+        --color_texto_primario : #aaaa;
+
+}
 
 * {
     margin: 0;
@@ -43,5 +50,49 @@ h1 {
 }
 
 header img{
-    width: 100%
+    width: 100%;
+    display: block;
+
 }
+
+.columna_central {
+
+    margin: 0 auto;
+    max-width: 1200px;
+  
+}
+
+nav {
+
+    height: 60px;
+    ul {
+
+       
+        /* margin: 0 auto;
+        max-width: 1200px; */
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    li {
+        padding: 5px;
+        list-style: none;
+    
+    }
+
+    a{
+        color:inherit;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    /* background-image: url('../img/varietats.png'); */
+}
+
+.fondo_oscuro {
+
+    background-color:var(--color_fondo_primario);
+    color: var(--color_texto_primario)
+
+}
+
